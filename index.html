@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient"></div>
+            <div class="date-container">
+                <h2 class="date-dayname">Today</h2>
+                <div class="location">
+                    <div class="location-text">
+                        <p id="location">location - <span id="cityname"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-container"><i class="weather-icon" data-feather="sun"></i>
+                <div class="temperature">
+                    <h1 id="temp">0</h1>
+                    <span class="temp-unit">°C</span>
+                </div> 
+                <h3 class="weather-desc">Sunny</h3>
+            </div>
+        </div>
+        <div class="info-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <div class="precipitation">
+                        <span class="title">Cloude pct</span><span class="value" id="cloud_pct">0 %</span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="wind">
+                        <span class="title">Wind Status</span><span class="value" id="wind_speed">0 km/h</span>
+                      
+                        <div class="clear"></div>
+                    </div>
+                    <div class="precipitation">
+                        <span class="title">Sunrise & Sunset</span><span class="value" id="sunrise">0 %</span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="humidity">
+                        <span class="title">HUMIDITY</span><span class="value" id="humidity"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="humidity">
+                        <span class="title">max_temp</span><span class="value" id="max_temp"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="humidity">
+                        <span class="title">min_temp</span><span class="value" id="min_temp"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="humidity">
+                        <span class="title">Air Quality</span><span class="value" id="feels_like"></span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="week-container">
+                <ul class="week-list">
+                    <li class="active"><i class="day-icon" data-feather="sun">
+                        </i><span class="day-name">Today</span>
+                        <span class="day-temp">29°C</span>
+                    </li>
+                    <li><i class="day-icon" data-feather="cloud">
+                        </i><span class="day-name">Wed</span>
+                        <span class="day-temp">21°C</span>
+                    </li>
+                    <li><i class="day-icon" data-feather="cloud-snow">
+                        </i><span class="day-name">Thu</span>
+                        <span class="day-temp">08°C</span>
+                    </li>
+                    <li><i class="day-icon" data-feather="cloud-rain">
+                        </i><span class="day-name">Fry</span>
+                        <span class="day-temp">19°C</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div> -->
+            <!-- <div class="location-container">
+                <button class="location-button"> <i data-feather="map-pin">
+                    </i><span>Change location</span></button>
+            </div> -->
+            <form class="search" id="search">
+                <input type="text" id="query" placeholder="Enter City Name..." />
+                <button type="submit" id="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+
+</html>
